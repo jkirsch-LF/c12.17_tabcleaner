@@ -13,10 +13,15 @@
     "permissions": [
       "storage",
       "tabs",
-      "<all_urls>"
+      "<all_urls>",
+      "identity", 
+      "https://www.googleapis.com/plus/v1/people/me/openIdConnect",
+      "https://www.google.com/accounts/OAuthGetRequestToken",
+      "https://www.google.com/accounts/OAuthAuthorizeToken",
+      "https://www.google.com/accounts/OAuthGetAccessToken"
     ],
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["background.html"]
     },
     "content_scripts": [
       {
